@@ -1,0 +1,143 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+\usepackage[margin=1in]{geometry}
+% \usepackage{mathptmx}
+\usepackage{xcolor}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% BEGIN: Fancy Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\bfseries\large Gender Shades Reflection}
+\rhead{Bobby R. Stephens III \textbar{} 27 January 2024}
+\renewcommand{\headrulewidth}{0.4pt}
+% END: Fancy Header
+
+
+
+
+\begin{document}
+\pagenumbering{gobble}
+% {\bfseries\LARGE Gender Shades Reflection}
+
+% Use this link to explore the discoveries made through the Gender Shades
+% project:
+
+% \href{http://gendershades.org/overview.html}{\textcolor[rgb]{0,0,.30}{\ul{http://gendershades.org/overview.html}}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What was the purpose of the Gender Shades project?\par
+\textcolor[rgb]{.25,.5,.75}{The purpose of the Gender Shades Project is to evaluate the accuracy of facial analysis algorithms along the lines of gender and skin tone. The project's evaluation on gender classifying facial analysis algorithms are used as a motivating factor in the fight to increase transparency and accountability in the development of these algorithms.}
+\item
+  How many images were selected for the gender classification
+  performance test?\par
+  \textcolor[rgb]{.25,.5,.75}{1,270 images were selected for the gender classification performance test. The subjects in the images were parliament members from three different African countries and three different European countries.}
+\item
+  How were images grouped?\par
+  \textcolor[rgb]{.25,.5,.75}{The images were grouped by gender, skin type, and both gender and skin type.}
+\item
+  What method was used to classify the differentiation in skin types?\par
+  \textcolor[rgb]{.25,.5,.75}{The Fitzpatrick scale was used to classify the differentiation in skin types. This scale is used to classify skin types on a scale of I to VI, with I being the lightest skin tone and VI being the darkest skin tone. In the evaluation, faces that were classified as a skin type of I through III were classified as light skinned, and faces that were classified as a skin type of IV through VI were classified as dark skinned.}
+\item
+  Which company had the best overall accuracy in the results?\par
+  \textcolor[rgb]{.25,.5,.75}{According to the results, Microsoft's Azure Face API had the best overall accuracy out of the other two companies.}
+\item
+  Which company had the largest gap in facial recognition accuracy?\par
+  \textcolor[rgb]{.25,.5,.75}{The evaluation showed that IBM's Watson API had the largest gap in facial recognition accuracy, harboring a 34.4\% error rate between lighter males and darker females.}
+\item
+  Error analysis revealed which group misgendered females the most?\par
+  \textcolor[rgb]{.25,.5,.75}{Error analysis found that 95.9\% of misgendered faces using the Face++ API belonged to female subjects.}
+\item
+  Of all the ``Potential Harms from Algorithmic Decision Making''
+  provided, list the top 5 ``Individual Harms'' that concern you the
+  MOST.
+\end{enumerate}
+
+\begin{quote}
+1.\ \textcolor[rgb]{.25,.5,.75}{Hiring and Employment}
+
+2.\ \textcolor[rgb]{.25,.5,.75}{Increased Surveillance}
+
+3.\ \textcolor[rgb]{.25,.5,.75}{Education}
+
+4.\ \textcolor[rgb]{.25,.5,.75}{Housing}
+
+5.\ \textcolor[rgb]{.25,.5,.75}{Loss of Liberty}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\item
+  List the 3 collective social harms from Algorithmic decision making?\par
+  \textcolor[rgb]{.25,.5,.75}{1.\ Discrimination}\par
+  \textcolor[rgb]{.25,.5,.75}{2.\ Economic Loss}\par
+  \textcolor[rgb]{.25,.5,.75}{3.\ Social Stigmatization}
+\item
+  The Algorithmic Justice League is building a movement towards (what?):\par
+  \textcolor[rgb]{.25,.5,.75}{Equitable and accountable AI.} 
+\end{enumerate}
+
+\end{document}
